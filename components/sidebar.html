@@ -1,0 +1,29 @@
+<aside class="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span class="toggle-icon">≡</span>
+    </button>
+    <div class="sidebar-content">
+        <div class="identity-selector">
+            <h3>身份选择</h3>
+            <select id="role-select">
+                <option value="">请选择身份</option>
+                <option value="pm">天天</option>
+                <option value="developer">IEWW</option>
+                <option value="designer">铭</option>
+                <option value="tester">帽砸</option>
+                <option value="tester">南羽</option>
+            </select>
+        </div>
+        
+        <div class="page-nav">
+            <h3>页面导航</h3>
+            <ul class="nav-links" id="pageNavLinks">
+                <!-- 导航链接将通过JS动态加载 -->
+            </ul>
+        </div>
+
+        <div class="current-identity" id="current-identity">
+            <p>当前身份: <span id="current-user">未选择</span></p>
+        </div>
+    </div>
+</aside>

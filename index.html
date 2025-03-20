@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏开发项目管理</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 移除原有的侧边栏HTML代码，使用动态加载 -->
+    <div class="main-container">
+        <nav class="main-nav">
+            <div class="logo">INFINITE Studio</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队分工</a></li>
+                <li><a href="resources.html">参考资料</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h1>游戏项目开发管理系统</h1>
+                <p>追踪项目进度，促进团队协作</p>
+            </section>
+
+            <section class="project-dashboard" id="project-section">
+                <h2>项目管理</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>当前项目</h3>
+                        <div id="current-project">加载中...</div>
+                        <div class="project-progress">
+                            <h4>项目进度</h4>
+                            <div id="progress-bar">加载中...</div>
+                            <div class="milestone-list" id="milestones">
+                                <!-- 里程碑列表将通过JS动态加载 -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>团队概况</h3>
+                        <div id="team-count">加载中...</div>
+                        <div class="team-list" id="team-members">
+                            <!-- 团队成员列表将通过JS动态加载 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team-discussion" id="discussion-section">
+                <h2>团队讨论</h2>
+                <div class="discussion-board">
+                    <div class="message-list" id="message-board">
+                        <!-- 消息列表将通过JS动态加载 -->
+                    </div>
+                    <div class="message-input">
+                        <textarea id="message-content" placeholder="在这里输入你的想法..."></textarea>
+                        <button id="send-message">发送</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

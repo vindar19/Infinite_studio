@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参考资料 - INFINITE Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="main-nav">
+            <div class="logo">INFINITE Studio</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队分工</a></li>
+                <li><a href="resources.html">参考资料</a></li>
+            </ul>
+        </nav>
+
+        <main class="resources-page">
+            <div class="page-tabs">
+                <nav class="tabs-nav">
+                    <a href="#all-resources" class="tab-item active">全部资料</a>
+                    <a href="#scene-references" class="tab-item">场景参考</a>
+                    <a href="#character-references" class="tab-item">人物参考</a>
+                </nav>
+            </div>
+            <h1 class="page-title">参考资料库</h1>
+            
+            <div class="resources-container">
+                <section class="resource-section" id="scene-references">
+                    <h2>场景参考</h2>
+                    <div class="upload-area">
+                        <input type="file" id="scene-upload" accept="image/*,video/*" multiple>
+                        <label for="scene-upload" class="upload-button">
+                            <i class="upload-icon">+</i>
+                            <span>上传场景参考</span>
+                        </label>
+                    </div>
+                    <div class="resource-grid" id="scene-grid">
+                        <!-- 资源将通过JS动态加载 -->
+                    </div>
+                </section>
+
+                <section class="resource-section" id="character-references">
+                    <h2>人物参考</h2>
+                    <div class="upload-area">
+                        <input type="file" id="character-upload" accept="image/*,video/*" multiple>
+                        <label for="character-upload" class="upload-button">
+                            <i class="upload-icon">+</i>
+                            <span>上传人物参考</span>
+                        </label>
+                    </div>
+                    <div class="resource-grid" id="character-grid">
+                        <!-- 资源将通过JS动态加载 -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/resources.js"></script>
+</body>
+</html>
